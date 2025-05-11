@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(47, 88%, 63%);
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        min-height: 100vh;
+      }
+
+      .card {
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px black;
+        max-width: 375px;
+        padding: 24px;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .card-image img {
+        width: 100%;
+        height: auto;
+      }
+
+      .learning {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: hsl(47, 88%, 63%);
+        border-radius: 5px;
+        height: 30px;
+        margin-top: 24px;
+        width: 100px;
+      }
+
+      .text {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        margin-top: 15px;
+      }
+
+      .title h1 {
+        font-size: 27px;
+        font-weight: 800;
+        text-align: start;
+      }
+
+      .paragraph p {
+        color: hsl(0, 0%, 42%);
+        text-align: start;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .perfil  {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .perfil-image img {
+        width: 35px;
+        padding-right: 10px;
+      }
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <article class="card" aria-label="Blog preview card">
+
+        <div class="card-image">
+          <img src="./assets/images/illustration-article.svg" alt="Illustration">
+        </div>
+
+        <div class="learning"><b>Learning</b></div>
+
+        <time class="text" datetime="2023-12-21">Published 21 Dec 2023</time>
+
+        <div class="title"><h1>HTML & CSS foundations</h1></div>
+
+        <div class="paragraph"><p>These languages are the backbone of every website, defining structure, content, and presentation.</p></div>
+
+        <div class="perfil">
+          <div class="perfil-image"><img src="./assets/images/image-avatar.webp" alt="Perfil"></div>
+          <div class="name"><p><b>Greg Hooper</b></p></div>
+        </div>
+
+    </article>
+
+  </body>
+
+</html>
